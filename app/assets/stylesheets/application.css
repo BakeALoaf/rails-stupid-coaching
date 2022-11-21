@@ -14,6 +14,35 @@
  *= require_self
  */
 
- .answer{
-  background-color: bisque;
+ .container{
+  display: inline-flex;
+}
+
+.answer {
+  background-color: rgb(255, 250, 202);
+  text-align: justify;
+}
+
+.answer::before {
+  height: 65px;
+  content:' ';
+  position: absolute;
+  top: 10;
+  width: 8px;
+}
+.answer::before {
+  left: 4px;
+  background-color: rgb(95, 95, 95);
+}
+
+.question::before {
+  height: 65px;
+  content:' ';
+  position: absolute;
+  top: 5;
+  width: 8px;
+}
+.question::before {
+  left: 4px;
+  background-color: rgb(95, 95, 95);
 }
